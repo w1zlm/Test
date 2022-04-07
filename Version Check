@@ -1,10 +1,13 @@
+Create = true
 for i, v in pairs(game.Players.LocalPlayer:GetChildren()) do
 	if v.Name == "Newest Gui Version" then
-		v:Remove()
+		v.Value = "pre-1.2 v3"
+		Create = false
 	end
 end
-
-local Version = Instance.new("StringValue")
-Version.Parent = game:GetService("Players").LocalPlayer
-Version.Name = "Newest Gui Version"
-Version.Value = "pre-1.2 v3"
+if Create == true then
+	local Version = Instance.new("StringValue")
+	Version.Parent = game:GetService("Players").LocalPlayer
+	Version.Name = "Newest Gui Version"
+	Version.Value = "pre-1.2 v3"
+end
