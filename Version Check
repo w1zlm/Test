@@ -1,6 +1,6 @@
 for i, v in pairs(game.Players.LocalPlayer:GetChildren()) do
 	if v.Name == "Newest Gui Version" then
-		v.Remove()
+		v:Remove()
 	end
 end
 
