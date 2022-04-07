@@ -1,0 +1,4 @@
+local Version = Instance.new("StringValue")
+Version.Parent = game:GetService("Players").LocalPlayer
+Version.Name = "Newest Gui Version"
+Version.Value = "pre-1.2 v3"
