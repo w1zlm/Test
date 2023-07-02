@@ -74,16 +74,8 @@ local animNames = {
 	dance2 =    getAnimTable(OrigAnimator.dance2),
 	dance3 =    getAnimTable(OrigAnimator.dance3),
 	laugh = getAnimTable(OrigAnimator.laugh),
-	cheer = {
-				{ id = "http://www.roblox.com/asset/?id=507770677", weight = 10 } 
-			},
+	cheer = getAnimTable(OrigAnimator.cheer),
 }
-
---[[
-    {
-		{ id = "http://www.roblox.com/asset/?id=507770677", weight = 10 } 
-	}
-]]
 
 -- Existance in this list signifies that it is an emote, the value indicates if it is a looping emote
 local emoteNames = { wave = false, point = false, dance = true, dance2 = true, dance3 = true, laugh = false, cheer = false}
@@ -783,3 +775,4 @@ while Character.Parent ~= nil do
 	local _, currentGameTime = wait(0.1)
 	stepAnimate(currentGameTime)
 end
+
