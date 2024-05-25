@@ -51,9 +51,6 @@ local function getAnimTable(anims)
     return returnTable
 end
 
-local OrigAnimator = Character.Animate
-OrigAnimator.Disabled = true
-
 local animTable = {}
 local animNames = { 
 	idle = 	getAnimTable(OrigAnimator.idle),
